@@ -1,0 +1,8 @@
+streamlit 
+pandas
+PyPDF2
+openpyxl
+os
+time
+requests
+io 
