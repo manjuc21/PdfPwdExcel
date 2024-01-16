@@ -73,7 +73,7 @@ def convert_pdf_to_excel(pdf_file):
 
 
     file_path =pdf_name_withoutextension  # Replace with your file path
-    df = pd.read_excel(file_path)
+    df = pd.read_excel(file_path, engine='openpyxl')
 
     # Add a Serial Number column
     df.insert(0, 'Sl. No.', range(1, 1 + len(df)))
